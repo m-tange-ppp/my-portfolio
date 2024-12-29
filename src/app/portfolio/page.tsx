@@ -3,8 +3,8 @@ import Image from "next/image";
 
 function Portfolio() {
   return (
-    <div className="flex flex-col items-center gap-16">
-      <div>
+    <div className="flex flex-col items-center gap-16 mx-4">
+      <div className="p-4 rounded-lg shadow-lg shadow-slate-400">
         <h2 className="text-2xl">Tetris</h2>
         <Link href="https://next-tetris-six.vercel.app/" target="blank">
           <Image
@@ -27,7 +27,7 @@ function Portfolio() {
         <p>Reactで作ったテトリスです。hooksを使いこなしたかった。</p>
       </div>
 
-      <div>
+      <div className="p-4 rounded-lg shadow-lg shadow-slate-400">
         <h2 className="text-2xl">Blog</h2>
         <Link href="https://next-blog-epqp.vercel.app/" target="blank">
           <Image
@@ -50,7 +50,7 @@ function Portfolio() {
         </p>
       </div>
 
-      <div>
+      <div className="p-4 rounded-lg shadow-lg shadow-slate-400">
         <h2 className="text-2xl">Dice</h2>
         <Link
           href="https://m-tange-ppp.github.io/react-random-app/"
