@@ -20,7 +20,7 @@ function About() {
   ];
 
   return (
-    <div className="space-y-16">
+    <div className="mx-4">
       <table className="table-auto w-full shadow-lg shadow-slate-400">
         <thead>
           <tr className="bg-slate-800 text-white">
@@ -38,7 +38,9 @@ function About() {
               <td>{item.value}</td>
             </tr>
           ))}
-          <tr className="bg-white">
+          <tr
+            className={`${data.length % 2 === 0 ? "bg-white" : "bg-slate-400"}`}
+          >
             <td className="p-2">Links</td>
             <td className="flex">
               {links.map((item, index) => (

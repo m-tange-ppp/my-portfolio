@@ -9,7 +9,7 @@ async function Navbar() {
   ];
 
   return (
-    <div className="after:block after:content-[''] after:h-24 min-[430px]:after:h-16">
+    <div className="after:block after:content-[''] after:h-[88px] min-[430px]:after:h-16">
       <header className=" fixed top-0 left-0 w-full z-50">
         <nav className="p-4 bg-gray-800 text-white flex justify-between items-center">
           <h1 className="text-xl sm:text-2xl font-bold">

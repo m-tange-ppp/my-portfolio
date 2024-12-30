@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "m-tange-ppp's portfolio",
+  title: "m-tange-ppp's Portfolio",
   description: "m-tange-pppによる創作物",
 };
 
@@ -27,11 +27,15 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gray-100`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-100`}
       >
-        <Navbar />
-        <main className="mx-auto my-4 max-w-[450px]">{children}</main>
-        <Footer />
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="mx-auto my-4 max-w-[450px] flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
