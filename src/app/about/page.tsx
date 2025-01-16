@@ -4,6 +4,12 @@ import React from "react";
 type DataType = { key: string; value: string };
 type LinkType = { name: string; url: string };
 
+export const metadata = {
+  title: "プロフィール | m-tange-ppp",
+  description:
+    "m-tange-pppのプロフィール、スキル、趣味、各種SNSリンクをご紹介します。",
+};
+
 function About() {
   const data: DataType[] = [
     { key: "Name", value: "m-tange-ppp" },

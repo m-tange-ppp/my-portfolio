@@ -26,3 +26,8 @@ export default function Home() {
     </div>
   );
 }
+
+export const metadata = {
+  title: "m-tange-ppp's Portfolio",
+  description: "Web開発を学ぶm-tange-pppのポートフォリオサイトです。",
+};
