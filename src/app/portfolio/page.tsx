@@ -58,11 +58,12 @@ function Portfolio() {
         </article>
 
         <article className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
-          <div className="relative h-[280px] w-full">
+          <div className="relative h-[280px] w-full overflow-hidden">
             <Link
               href="https://next-blog-epqp.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
+              className="block relative w-full h-full"
             >
               <Image
                 src="/screenshot_blog.png"
@@ -71,7 +72,7 @@ function Portfolio() {
                 className="object-contain transition-transform duration-300 group-hover:scale-105"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105" />
             </Link>
           </div>
 
