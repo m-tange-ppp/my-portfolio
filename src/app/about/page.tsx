@@ -21,44 +21,42 @@ function About() {
 
   return (
     <div className="mx-4">
-      <table className="table-auto w-full shadow-lg shadow-slate-400">
-        <thead>
-          <tr className="bg-slate-800 text-white">
-            <th className="p-2">Profile Section</th>
-            <th>Content</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((item, index) => (
-            <tr
-              key={index}
-              className={`${index % 2 === 0 ? "bg-white" : "bg-slate-400"}`}
-            >
-              <td className="p-2">{item.key}</td>
-              <td>{item.value}</td>
-            </tr>
-          ))}
-          <tr
-            className={`${data.length % 2 === 0 ? "bg-white" : "bg-slate-400"}`}
+      <div className="bg-white rounded-xl shadow-md overflow-hidden">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="group flex flex-col sm:flex-row border-b border-gray-100 hover:bg-slate-50 transition-colors"
           >
-            <td className="p-2">Links</td>
-            <td className="flex">
+            <div className="w-full sm:w-1/3 p-4 sm:p-6 bg-slate-50 text-gray-600 font-medium">
+              {item.key}
+            </div>
+            <div className="w-full sm:w-2/3 p-4 sm:p-6 text-gray-800">
+              {item.value}
+            </div>
+          </div>
+        ))}
+
+        <div className="group flex flex-col sm:flex-row">
+          <div className="w-full sm:w-1/3 p-4 sm:p-6 bg-slate-50 text-gray-600 font-medium">
+            Links
+          </div>
+          <div className="w-full sm:w-2/3 p-4 sm:p-6">
+            <div className="flex flex-wrap gap-3">
               {links.map((item, index) => (
-                <div key={index} className="flex">
-                  <Link
-                    href={item.url}
-                    target="blank"
-                    className="hover:text-slate-600 underline"
-                  >
-                    {item.name}
-                  </Link>
-                  {index < links.length - 1 && <p>,&nbsp;</p>}
-                </div>
+                <Link
+                  key={index}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-slate-100 text-slate-700 rounded-full hover:bg-slate-200 transition-colors"
+                >
+                  {item.name}
+                </Link>
               ))}
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
