@@ -43,7 +43,7 @@ function Portfolio() {
             </div>
 
             <p className="text-gray-600">
-              Reactで作ったテトリスです。hooksを使いこなしたかった。
+              Reactで作ったテトリスです。スコア機能はFirebaseと連携しています。
             </p>
 
             <div className="flex gap-2 flex-wrap">
@@ -51,7 +51,7 @@ function Portfolio() {
                 React
               </span>
               <span className="px-3 py-1 text-sm bg-slate-100 text-slate-700 rounded-full">
-                Hooks
+                Firebase
               </span>
             </div>
           </div>
@@ -89,7 +89,7 @@ function Portfolio() {
             </div>
 
             <p className="text-gray-600">
-              Next.jsで作った簡易ブログです。DBはPrismaでSupabaseと連携しています。
+              Next.jsで作った簡易ブログです。DBと認証はSupabaseと連携しています。
             </p>
 
             <div className="flex gap-2 flex-wrap">
@@ -137,7 +137,7 @@ function Portfolio() {
             </div>
 
             <p className="text-gray-600">
-              Reactで作ったサイコロです。たくさんサイコロが欲しいときに。
+              Reactで作ったサイコロです。たくさんサイコロが欲しいときにどうぞ。
             </p>
 
             <div className="flex gap-2 flex-wrap">
